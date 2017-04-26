@@ -3,7 +3,7 @@
 #phone-slider {
   width: 540px;
   height: 700px;
-  background: url('/img/hand-mockup-2.png') no-repeat top right;
+  background: url('../img/hand-mockup-2.png') no-repeat top right;
   position: absolute;
   bottom: -100px;
   right: 140px;
@@ -34,7 +34,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  background-image: url('/img/phone-girl-mainScreen-placeholder-edit.jpg');
+  background-image: url('../img/phone-girl-mainScreen-placeholder-edit.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
