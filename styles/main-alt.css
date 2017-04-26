@@ -34,7 +34,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  background-image: url('./img/phone-girl-mainScreen-placeholder-edit.jpg');
+  background-image: url('../img/phone-girl-mainScreen-placeholder-edit.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
