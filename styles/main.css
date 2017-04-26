@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.main-body-section{
+  background: url('http://tub.tubgit.com/reimg/resize-img.php?src=http://tub.tubgit.com/images247/oeqkg4agfoo.jpg&h=450&w=728');
+  background-size: cover ;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  border: 2px solid black;
+  /*background: grey;*/
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-content-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid red;
+  height: 100vh;
+}
+.main-content-top{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  height: 80px;
+}
+.main-content-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  border: 2px solid blue;
+  height: 100%;
+}
+.main-content-outer{
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  min-width: 600px;
+  height: 100%;
+  min-height: 500px;
+  background: rgba(255,255,255, .6);
+}
+.main-content-right{
+  position: relative;
+  justify-content: flex-start;
+  width: 39%;
+  height: 100%;
+  border: 2px solid black;
+}
+.main-content-right img{
+  position: absolute;
+  left: -400px;
+}
+.phone-slider{
+  /*z-index: 100;*/
+  position: absolute;
+  bottom: 0;
+  left: 76px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 240px;
+  height: 410px;
+}
+.main-content-left{
+  display: flex;
+  justify-content: flex-start;;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  border: 2px solid black;
+}
+.content-left-text-box{
+  z-index: 300;
+  width: 90%;
+  min-width: 550px;
+  height:60%;
+  min-height: 400px;
+  background: rgba(0,0,0, .3)
+}
+
+/*Left Side Nav Bar*/
+.nav-bar-inner{
+  /*position: absolute;*/
+  flex-direction: column;
+  /*left: -250px;*/
+  width: 250px;
+  height: 100vh;
+  background: #E37401;
+  transition: all .5s ease;
+}
+.nav-bar-img{
+margin: 40px 0 0 0;
+}
+.nav-bar-img img{
+  margin-left: 30px;
+  width: 100px;
+}
+.nav-bar-list li{
+  padding: 15px 0 15px 10px;
+  width: 100%;
+  transition: all .5s;
+}
+.nav-bar-list li:hover{
+  background: rgba(0,0,0, .1)
+}
+.nav-bar-list a {
+    text-decoration: none;
+}
+.nav-bar-list a li{
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  font-size: .8rem;
+}
+/* hamber menu and main content top */
+.main-content-top img{
+  padding-bottom: 25px;
+  margin-left: 30px;
+}
+.hamburger-menu{
+  z-index: 400;
+  margin-left: 30px;
+  width: 25px;
+  height: 25px;
+}
+.hamburger-menu li{
+  width: 22px;
+  height: 3px;
+  margin-bottom: 3px;
+  border-radius: 2px;
+  background: white;
+}
+/* Nav Bar Functions*/
+.show-nav{
+  display: flex;
+}
+
+/* Scroller Outer Section*/
+
+.scroller-outer-section{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 600;
+}
+
+.scroller-section-one{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0, .2);
+}
+.scroller-section-two{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0, .8);
+}
+.scroller-section-three{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0, .2);
+}
+.scroller-section-four{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0, .8);
+}
+
+
+
+
+@media (max-width: 1400px){
+  .nav-bar-inner{
+    width: 200px;
+  }
+}

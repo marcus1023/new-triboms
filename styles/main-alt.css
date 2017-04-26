@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
+#phone-slider {
+  width: 540px;
+  height: 700px;
+  background: url('/img/hand-mockup-2.png') no-repeat top right;
+  position: absolute;
+  bottom: -100px;
+  right: 140px;
+  /*z-index: 300;*/
+  overflow: visible;
+}
+
+#phone-slider .view {
+    width: 232px;
+    height: 404px;
+    position: absolute;
+    left: 220px;
+    top: 80px;
+    /*z-index: 999;*/
+    overflow: hidden;
+}
+#phone-slider .track {
+  position: absolute;
+  left: 0;
+  transition: top 1000ms ease;
+}
+#phone-slider .pane {
+  width: 232px;
+  height: 404px;
+  background-size: cover;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  background-image: url('/img/phone-girl-mainScreen-placeholder-edit.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+/*.main-body-section{
+  background: url('../img/phone-girl-mainScreen-placeholder.png');
+  background-size: 100% ;
+  background-position: top 300px ;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}*/
+.main-content-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /*border: 2px solid red;*/
+  height: 90px;
+
+    transition: all .5s ease;
+}
+.main-content-top{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /*border: 2px solid black;*/
+  height: 90px;
+}
+.main-content-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  /*border: 2px solid blue;*/
+  height: 100%;
+}
+.main-content-outer{
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  width: 600px;
+  height: 100%;
+  min-height: 500px;
+  /*background: rgba(255,255,255, .6);*/
+}
+.main-content-right{
+  position: relative;
+  justify-content: flex-start;
+  width: 39%;
+  height: 100%;
+  /*border: 2px solid black;*/
+}
+.main-content-right img{
+  position: absolute;
+  left: -400px;
+}
+.phone-slider{
+  /*z-index: 100;*/
+  position: absolute;
+  top: 78px;
+  left: 76px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 240px;
+  height: 410px;
+}
+.main-content-left{
+  display: flex;
+  justify-content: flex-start;;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  /*border: 2px solid black;*/
+}
+.content-left-text-box{
+  z-index: 300;
+  width: 90%;
+  min-width: 550px;
+  height:60%;
+  min-height: 400px;
+  /*background: rgba(0,0,0, .3)*/
+}
+
+
+
+/*Left Side Nav Bar*/
+.nav-bar-inner{
+  position: absolute;
+  flex-direction: column;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: #E37401;
+  transition: all .5s ease;
+}
+.nav-bar-img{
+margin: 40px 0 0 0;
+}
+.nav-bar-img img{
+  margin-left: 30px;
+  width: 100px;
+}
+.nav-bar-list li{
+  padding: 15px 0 15px 10px;
+  width: 100%;
+  transition: all .5s;
+}
+.nav-bar-list li:hover{
+  background: rgba(0,0,0, .1)
+}
+.nav-bar-list a {
+    text-decoration: none;
+}
+.nav-bar-list a li{
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  font-size: .8rem;
+}
+/* hamber menu and main content top */
+.main-content-top img{
+  padding-bottom: 25px;
+  margin-left: 30px;
+}
+.hamburger-menu{
+  z-index: 400;
+  margin-left: 30px;
+  width: 25px;
+  height: 25px;
+}
+.hamburger-menu li{
+  width: 22px;
+  height: 3px;
+  margin-bottom: 3px;
+  border-radius: 2px;
+  background: white;
+}
+/* Nav Bar Functions*/
+.show-nav{
+  left: 0;
+}
+.hide-nav{
+  display: none;
+}
+.move-body{
+  margin-left: 220px !important;
+      transition: all .2s ease;
+}
+.move-main{
+  left: 140px !important;
+      transition: all .2s ease;
+}
+.scroll-nav-main{
+  left: 200px !important;
+  transition: all .2s ease;
+}
+
+/* Scroller Outer Section*/
+
+.scroller-outer-section{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 600;
+}
+
+.scroller-content-box{
+  color: white;
+  width: 500px !important;
+  margin-left: 100px;
+  margin-top: 100px;
+
+  transition: all .5s ease !important;
+}
+#emailSuccessMess{
+  padding: 10px;
+}
+.grey-boxer{
+  background: #222;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+.grey-boxer span:hover{
+  transition: all 1s;
+ color: #E37401;
+}
+/* page right float for responce*/
+.page-right-floater{
+  width:40%;
+  height: 100vh;
+  background: red;
+}
+
+
+
+@media (max-width: 1400px){
+  .nav-bar-inner{
+    width: 180px;
+  }
+}
